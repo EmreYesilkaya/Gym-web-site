@@ -1,0 +1,168 @@
+/* Importing Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Basic reset and font settings for all HTML elements */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style settings for the banner section */
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(22, 22, 26, 0.658);
+}
+
+/* Style settings for the video inside the banner */
+.banner video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Position and z-index settings for the content inside the banner */
+.banner .content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Flexbox style settings for the top navigation bar */
+.banner .content .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(27, 38, 44, 0.5);
+    margin: auto;
+    align-items: center;
+}
+
+/* Style settings for the logo section */
+.logo {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Style settings for the logo text */
+.logo h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style settings for the special colored text in the logo */
+.logo h1 span {
+    color: rgb(179, 19, 18);
+}
+
+/* Style settings for navigation items */
+.nav-items {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Flexbox style settings for the navigation list */
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Style settings for navigation list items */
+.nav-items ul li {
+    list-style: none;
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    padding: 12px 20px;
+}
+
+/* Style settings for navigation links */
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* Style settings for hover and active states of navigation links */
+li .active, a:hover {
+    color: rgb(187, 225, 250);
+}
+
+/* Special style settings for the 'Register' button */
+ul #sign {
+    background-color: rgb(179, 19, 18);
+}
+
+/* Hover state style settings for the 'Register' button */
+ul #sign:hover {
+    background: transparent;
+    border: 1.2px solid rgb(50, 130, 184);
+    padding: 11px 19px;
+}
+
+/* Style settings for the main content section */
+.main {
+    align-items: center;
+    text-align: center;
+    margin-top: 25vh;
+    color: white;
+}
+
+/* Style settings for the main heading */
+.main h3 {
+    font-size: 20px;
+}
+
+/* Style settings for the main heading text */
+.main h1 {
+    font-size: 80px;
+    padding: 25px 0px;
+    font-weight: bold;
+}
+
+/* Style settings for the special colored text in the main heading */
+.main h1 span {
+    color: rgb(179, 19, 18);
+    color: inherit;
+    text-decoration: none;
+}
+
+/* General style settings for buttons */
+button {
+    padding: 15px 20px;
+    background: rgb(179, 19, 18);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Hover state style settings for buttons */
+button:hover {
+    background: transparent;
+    border: 1.5px solid rgb(252, 50, 0);
+    color: rgb(252, 50, 0);
+    text-decoration: none;
+}
+
+/* Style settings for the element with the ID 'but' */
+#but {
+    color: inherit;
+    text-decoration: none;
+}

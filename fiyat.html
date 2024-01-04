@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Pricing</title>
+    <style>
+        /* Style settings for the container containing the pricing cards */
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            padding: 220px;
+        }
+        /* Style settings for each card */
+        .card {
+            border: 2px solid rgb(179, 19, 18);
+            border-radius: 10px;
+            padding: 30px;
+            width: 30%;
+            margin: 15px;
+            background-color: #f8f9fa; 
+            color: #333333; 
+            box-shadow: 0 6px 15px 0 rgba(0,0,0,0.3);
+        }
+
+        #button-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        /* Transform effect for the card's hover state */
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        /* Style settings for the card title */
+        .card h2 {
+            color: rgb(179, 19, 18); 
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        /* Style settings for the text inside the card */
+        .card p {
+            color: #6c757d; 
+            line-height: 1.6;
+        }
+        /* Style settings for the feature list inside the card */
+        .card .features {
+            margin: 20px 0;
+            list-style: inside square;
+        }
+        /* Style settings for the price information */
+        .card .price {
+            font-size: 28px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Background video banner -->
+    <div class="banner">
+        <video id="videobg" autoplay muted loop style="background-color: rgba(22, 22, 26, 0.658);">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+        <!-- Content and navigation section -->
+        <div class="content">
+            <div class="nav">
+                <div class="logo">
+                    <h1>MIS<span>GYM</span></h1>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="bmi.html">CALCULATE BMI</a></li>
+                        <li><a href="Hakkımızda.html">ABOUT US</a></li>
+                        <li><a href="iletişim.html">CONTACT</a></li>
+                        <li><a href="fiyat.html">PRICES</a></li>
+                        <li id="sign"><a href="kayit.html">SIGN UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form>
+
+        <!-- Main container for pricing cards -->
+        <div class="pricing-container">
+            <!-- Monthly plan card -->
+            <div class="card">
+                <h2>Monthly Plan</h2>
+                <p class="price">99.99 TL/month</p>
+                <ul class="features">
+                    <li>Renewable membership every month</li>
+                    <li>Full access, including group lessons</li>
+                    <li>Facility open 24/7</li>
+                    <li>Free wifi</li>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                </ul>
+            </div>
+            <!-- 6-month plan card -->
+            <div class="card">
+                <h2>6-Month Plan</h2>
+                <p class="price">549.99 TL/6 months</p>
+                <ul class="features">
+                    <li>Discount with a 6-month commitment</li>
+                    <li>Access to pool and sauna</li>
+                    <li>Free training consultancy</li>
+                    <li>Private changing cabin</li>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                </ul>
+            </div>
+            <!-- 12-month plan card -->
+            <div class="card">
+                <h2>12-Month Plan</h2>
+                <p class="price">999.99 TL/year</p>
+                <ul class="features">
+                    <li>Most economical package</li>
+                    <li>Personal trainer and diet consultancy</li>
+                    <li>Priority event registration</li>
+                    <li>Special discounts and offers</li>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                </ul>
+
+            </div>
+
+             <div id="button-container">
+        <button id="buy-button"><a href="kayit.html" style="color: white;     
+            text-decoration: none;">BUY NOW</a></button>
+    </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html> 

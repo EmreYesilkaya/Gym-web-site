@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Importing Montserrat font from Google Fonts and setting basic styles */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+        /* General style settings for all HTML elements */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Style settings for the body */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Style settings for the navigation bar */
+        .nav {
+            background-color: #333;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Style settings for the list items in the navigation bar */
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style settings for list elements in the navigation */
+        .nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        /* Style settings and transition effects for navigation links */
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: #e63946;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Style settings for hover and active states of navigation links */
+        .nav ul li a:hover,
+        .nav ul li a.active {
+            background-color: #333;
+            color: #e63946;
+            border: 1px solid #e63946;
+        }
+
+        /* Style settings for the logo */
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        /* Style settings for the special colored text in the logo */
+        .logo span {
+            color: #e63946;
+        }
+
+        /* Style settings for the main content section */
+        .main {
+            padding: 120px;
+            text-align: center;
+        }
+
+        /* Style settings for the main content title */
+        .main h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* Style settings for the special colored text in the main content title */
+        .main span {
+            color: #e63946;
+        }
+
+        /* Grid style settings for the section listing the benefits */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Style settings for each benefit card */
+        .benefit-item {
+            border: 2px solid rgb(179, 19, 18);
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Style settings for the hover state of benefit cards */
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Media query for small screen devices */
+        @media (max-width: 768px) {
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar section -->
+    <div class="nav">
+        <div class="logo">
+            <h1>MIS<span>GYM</span></h1>
+        </div>
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="bmi.html">CALCULATE BMI</a></li>
+            <li><a href="Hakkımızda.html">ABOUT US</a></li>
+            <li><a href="iletişim.html">CONTACT</a></li>
+            <li><a href="fiyat.html">PRICES</a></li>
+            <li id="sign"><a href="kayit.html">SIGN UP</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content section -->
+    <div class="main">
+        <h1><span>MIS Gym</span>: The Brand of More and Easier Sports</h1>
+        <!-- About Us description text -->
+        <p>
+            At MIS Gym, we turn sports into a lifestyle. Our goal is to offer people a healthier, more energetic, and happier lifestyle.
+            MIS Gym stands out with its wide and modern sports facilities, expert trainer staff, and rich activity programs.
+        </p>
+        <p>
+            With our customer satisfaction-focused approach, we offer programs suitable for every age and fitness level. We welcome, motivate, and support everyone from beginners to experienced athletes.
+        </p>
+        <!-- Section listing the advantages of working out at MIS Gym -->
+        <div style="background-color: #f4f4f4; padding: 10px; border-radius: 8px; color: #333;">
+            The advantages of working out at MIS Gym:
+        </div>
+
+        <p>MIS Gym is here to offer you the right sports experience!</p>
+
+        <!-- Section on the advantages offered by the gym -->
+        <div class="benefits">
+            <div class="benefit-item">
+                <h4>Wide and Modern Facilities</h4>
+                <p>MIS Gym has wide and modern sports facilities equipped with the latest technology equipment.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Expert Trainer Staff</h4>
+                <p>Our experienced trainers are here to create the most suitable exercise program for you.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Rich Activity Programs</h4>
+                <p>We offer various activity programs suitable for every age group and fitness level.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

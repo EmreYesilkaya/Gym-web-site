@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* Importing Roboto font from Google Fonts and setting base styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        /* General style settings for all HTML elements */
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Background color and other style settings for the page body */
+        body {
+            background-color: #393E46; 
+        }
+
+        /* Style settings for the banner section */
+        .banner {
+            overflow: hidden;
+        }
+
+        .banner .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+        /* Style settings for the top navigation bar */
+        .banner .content .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 11vh;
+            background-color: rgb(27, 38, 44, 0.5);
+            margin: auto;
+            align-items: center;
+        }
+
+        /* Style settings for the logo section */
+        .logo {
+            width: 30%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .logo h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .logo h1 span {
+            color: rgb(179, 19, 18);
+        }
+
+        /* Style settings for navigation items */
+        .nav-items {
+            width: 45%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .nav-items ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .nav-items ul li {
+            list-style: none;
+            display: inline-block;
+            height: 20px;
+            width: auto;
+            padding: 12px 20px;
+        }
+
+        /* Style settings for navigation links */
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        /* Style settings for hover and active states of navigation links */
+        li.active,
+        a:hover {
+            color: rgb(187, 225, 250);
+        }
+
+        ul #sign {
+            background-color: rgb(179, 19, 18);
+        }
+
+        ul #sign:hover {
+            background: transparent;
+            border: 1.2px solid rgb(50, 130, 184);
+            padding: 11px 19px;
+        }
+
+        /* Style settings for the main content section */
+        .main {
+            text-align: center;
+            margin-top: 5vh;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .main h3 {
+            font-size: 20px;
+        }
+
+        .main h1 {
+            font-size: 80px;
+            padding: 6px 0px;
+        }
+
+        .main h1 span {
+            color: rgb(170, 28, 28);
+        }
+
+        .main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Button style settings for the contact form */
+        .main button {
+            padding: 15px 20px;
+            background: rgb(179, 19, 18);
+            border: none;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .main button:hover {
+            background: transparent;
+            border: 1.5px solid rgb(252, 50, 0);
+            color: rgb(252, 50, 0);
+            text-decoration: underline;
+        }
+
+        /* Style settings for the contact form */
+        .contact-form {
+            max-width: 400px; 
+            margin: 50px auto; 
+            text-align: left;
+            background-color: #393E46;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        /* Label style settings for the contact form */
+        .contact-form label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: white; 
+        }
+
+        /* Input and textarea style settings for the contact form */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Button style settings for the contact form */
+        .contact-form button {
+            background-color: rgb(179, 19, 18);
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        /* Hover state style settings for the contact form button */
+        .contact-form button:hover {
+            background: transparent;
+            border: 1.5px solid rgb(252, 50, 0);
+            color: rgb(252, 50, 0);
+        }
+
+        /* Link style settings for the logo */
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Hover state style settings for the logo link */
+        .logo a:hover {
+            text-decoration: none;
+        }
+
+        /* Style settings for the banner video */
+        .banner video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Banner area, includes background video -->
+    <div class="banner">
+        <video id="videobg" autoplay muted loop style="background-color: rgba(22, 22, 26, 0.658);">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <!-- Navigation bar for page transitions -->
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>MIS<span>GYM</span></h1>
+                    </a>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="bmi.html">CALCULATE BMI</a></li>
+                        <li><a href="Hakkımızda.html">ABOUT US</a></li>
+                        <li><a href="iletişim.html">CONTACT</a></li>
+                        <li><a href="fiyat.html">PRICES</a></li>
+                        <li id="sign"><a href="kayit.html">SIGN UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content section, contains contact information and form -->
+    <div class="main">
+        <h1><span>Contact Us</span></h1>
+
+        <div class="contact-form">
+            <!-- Contact form -->
+            <form onsubmit="return showAlert()">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="send1">Send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Your information has been received. Thank you!");
+            return false; 
+        }
+    </script>
+</body>
+
+</html>
